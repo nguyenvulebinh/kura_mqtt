@@ -1,4 +1,4 @@
-# Hướng dẫn cách publish/subcribe Raspberry Pi tới Brocker
+# Hướng dẫn cách publish/subcribe Raspberry Pi tới Broker
 
 ## Yêu cầu trước khi tiến hành kết nối 
 + **Raspberry Pi được cài đặt theo [hướng dẫn](https://github.com/nguyenvulebinh/kura_experience/blob/master/Ket_noi_i2c.md)**
