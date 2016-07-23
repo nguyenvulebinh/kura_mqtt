@@ -7,15 +7,19 @@
 + **Đọc [tài liệu](http://eclipse.github.io/kura/doc/configurable_component.html) hướng dẫn cách thêm file cấu hình vào kura**
 + **Đọc [tài liệu](http://www.indigoo.com/dox/wsmw/1_Middleware/MQTT.pdf) tổng quan về kết nối mqtt**
 + **Tham khảo [tài liệu](https://developer.ibm.com/recipes/tutorials/connect-eclipse-kura-to-ibm-watson-iot/) hướng dẫn kết nối kura tới IBM Watson IoT**
++ **Mô hình kết nối sẽ như sau**
 
+![alt tag](https://github.com/nguyenvulebinh/kura_mqtt/blob/master/13816802_1049728231783921_754624311_n.jpg)
 
 ## Các bước tiến hành kết nối
 **Ta tận dụng lại project demo của kura để làm ví dụ cho việc kết nối này. Đọc [tài liệu](http://eclipse.github.io/kura/doc/heater_demo.html) trước khi thực hiện các bước dưới đây**
 
 + Bước 1: Đăng nhập vào giao diện kura trên web, cấu hình MqttDataTransport như hình.
+
 ![alt tag](https://github.com/nguyenvulebinh/kura_mqtt/blob/master/Screenshot%20from%202016-07-23%2010-27-41.png)
 
 + Bước 2: Đăng nhập vào trang "https://www.cloudmqtt.com/" và tiến hành tạo các topic như hình. Ở đây ta sẽ sử dụng 2 topic là test_mqtt và test_control
+
 ![alt tag](https://github.com/nguyenvulebinh/kura_mqtt/blob/master/Screenshot%20from%202016-07-23%2010-34-34.png)
 
 + Bước 3: Vào file cấu hình của project org.eclipse.kura.demo.heater (OSGI-INF/metatype/org.eclipse.kura.demo.heater.Heater.xml) để chỉnh sửa cấu hình cho kura có thể kết nối tới topic đã tạo ở bước 2. Ở đây sẽ khai báo 2 topic và các mức qos tương ứn với từng topic
@@ -84,4 +88,6 @@ Lưu ý: Theo như lúc mình làm thử thì topic của kura sẽ mặc địn
 	
 	...
 ```
++ Bước 5: Build và deploy project lên kura.
 
+![alt tag](https://github.com/nguyenvulebinh/kura_mqtt/blob/master/Screenshot%20from%202016-07-23%2011-02-21.png)
