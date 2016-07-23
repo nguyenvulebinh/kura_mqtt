@@ -2,7 +2,7 @@
 
 ## Yêu cầu trước khi tiến hành kết nối 
 + **Raspberry Pi được cài đặt theo [hướng dẫn](https://github.com/nguyenvulebinh/kura_experience/blob/master/Ket_noi_i2c.md)**
-+ **THiết đặt brocker đơn giản theo [hướng dẫn](http://iotalliance.vn/categories/tutorial/articles/huong-dan-lap-trinh-esp8266-phan-3-lap-trinh-giao-tiep-mqtt.html) bước 1.4**
++ **THiết đặt broker đơn giản theo [hướng dẫn](http://iotalliance.vn/categories/tutorial/articles/huong-dan-lap-trinh-esp8266-phan-3-lap-trinh-giao-tiep-mqtt.html) bước 1.4**
 + **Cài đặt [extention](https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm?hl=vi) trên Google Chrome để làm App client điều khiển Raspberry Pi**
 + **Đọc [tài liệu](http://eclipse.github.io/kura/doc/configurable_component.html) hướng dẫn cách thêm file cấu hình vào kura**
 + **Đọc [tài liệu](http://www.indigoo.com/dox/wsmw/1_Middleware/MQTT.pdf) tổng quan về kết nối mqtt**
@@ -49,7 +49,7 @@
 	</AD>
 ...
 ```
-Lưu ý: Theo như lúc mình làm thử thì topic của kura sẽ mặc định có định dang account-name/clientid/heater/tên_topic, vì thế trên brocker cũng phải đặt tên topic đúng như dạng này. Ở dưới kura phần "account-name/clientid/heater/" sẽ được tự động thêm vào vì thế nên trong file cấu hình chỉnh cần để "tên_topic" là đủ.
+Lưu ý: Theo như lúc mình làm thử thì topic của kura sẽ mặc định có định dang account-name/clientid/heater/tên_topic, vì thế trên broker cũng phải đặt tên topic đúng như dạng này. Ở dưới kura phần "account-name/clientid/heater/" sẽ được tự động thêm vào vì thế nên trong file cấu hình chỉnh cần để "tên_topic" là đủ.
 
 + Bước 4: Vào source file Heater.java thêm những phần sau (Hướng dẫn bên dưới chỉ thêm những phần code demo chưa có)
 ```java
