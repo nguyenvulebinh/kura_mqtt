@@ -94,9 +94,15 @@ Lưu ý: Theo như lúc mình làm thử thì topic của kura sẽ mặc địn
 
 ## Tài liệu tham khảo
 [1] https://github.com/nguyenvulebinh/kura_experience/blob/master/Ket_noi_i2c.md
+
 [2] http://iotalliance.vn/categories/tutorial/articles/huong-dan-lap-trinh-esp8266-phan-3-lap-trinh-giao-tiep-mqtt.html
+
 [3] https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm?hl=vi
+
 [4] http://eclipse.github.io/kura/doc/configurable_component.html
+
 [5] http://www.indigoo.com/dox/wsmw/1_Middleware/MQTT.pdf
+
 [6] https://developer.ibm.com/recipes/tutorials/connect-eclipse-kura-to-ibm-watson-iot/
+
 [7] http://eclipse.github.io/kura/doc/heater_demo.html
