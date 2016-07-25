@@ -1,18 +1,18 @@
 # Hướng dẫn cách publish/subcribe Raspberry Pi tới Broker
 
 ## Yêu cầu trước khi tiến hành kết nối 
-+ **Raspberry Pi được cài đặt theo [hướng dẫn](https://github.com/nguyenvulebinh/kura_experience/blob/master/Ket_noi_i2c.md)**
-+ **THiết đặt broker đơn giản theo [hướng dẫn](http://iotalliance.vn/categories/tutorial/articles/huong-dan-lap-trinh-esp8266-phan-3-lap-trinh-giao-tiep-mqtt.html) bước 1.4**
-+ **Cài đặt [extention](https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm?hl=vi) trên Google Chrome để làm App client điều khiển Raspberry Pi**
-+ **Đọc [tài liệu](http://eclipse.github.io/kura/doc/configurable_component.html) hướng dẫn cách thêm file cấu hình vào kura**
-+ **Đọc [tài liệu](http://www.indigoo.com/dox/wsmw/1_Middleware/MQTT.pdf) tổng quan về kết nối mqtt**
-+ **Tham khảo [tài liệu](https://developer.ibm.com/recipes/tutorials/connect-eclipse-kura-to-ibm-watson-iot/) hướng dẫn kết nối kura tới IBM Watson IoT**
++ **Raspberry Pi được cài đặt theo hướng dẫn[1]**
++ **THiết đặt broker đơn giản theo hướng dẫn [2] bước 1.4**
++ **Cài đặt extention [3] trên Google Chrome để làm App client điều khiển Raspberry Pi**
++ **Đọc tài liệu [4] hướng dẫn cách thêm file cấu hình vào kura**
++ **Đọc tài liệu [5] tổng quan về kết nối mqtt**
++ **Tham khảo tài liệu [6] hướng dẫn kết nối kura tới IBM Watson IoT**
 + **Mô hình kết nối sẽ như sau**
 
 ![alt tag](https://github.com/nguyenvulebinh/kura_mqtt/blob/master/13816802_1049728231783921_754624311_n.jpg)
 
 ## Các bước tiến hành kết nối
-**Ta tận dụng lại project demo của kura để làm ví dụ cho việc kết nối này. Đọc [tài liệu](http://eclipse.github.io/kura/doc/heater_demo.html) trước khi thực hiện các bước dưới đây**
+**Ta tận dụng lại project demo của kura để làm ví dụ cho việc kết nối này. Đọc tài liệu [7] trước khi thực hiện các bước dưới đây**
 
 + Bước 1: Đăng nhập vào giao diện kura trên web, cấu hình MqttDataTransport như hình.
 
@@ -91,3 +91,12 @@ Lưu ý: Theo như lúc mình làm thử thì topic của kura sẽ mặc địn
 + Bước 5: Build và deploy project lên kura.
 
 ![alt tag](https://github.com/nguyenvulebinh/kura_mqtt/blob/master/Screenshot%20from%202016-07-23%2011-02-21.png)
+
+## Tài liệu tham khảo
+[1] https://github.com/nguyenvulebinh/kura_experience/blob/master/Ket_noi_i2c.md
+[2] http://iotalliance.vn/categories/tutorial/articles/huong-dan-lap-trinh-esp8266-phan-3-lap-trinh-giao-tiep-mqtt.html
+[3] https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm?hl=vi
+[4] http://eclipse.github.io/kura/doc/configurable_component.html
+[5] http://www.indigoo.com/dox/wsmw/1_Middleware/MQTT.pdf
+[6] https://developer.ibm.com/recipes/tutorials/connect-eclipse-kura-to-ibm-watson-iot/
+[7] http://eclipse.github.io/kura/doc/heater_demo.html
